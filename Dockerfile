@@ -6,8 +6,8 @@ RUN apt-get update && apt-get install -y \
     python3-tk \
     python-opencv
 
-RUN mkdir /handstracker
-WORKDIR /handstracker
+RUN mkdir /musictracker
+WORKDIR /musictracker
 
 ADD requirements.txt /handstracker
 ADD train.py /handstracker
