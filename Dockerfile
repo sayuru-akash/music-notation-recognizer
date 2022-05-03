@@ -9,10 +9,10 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir /musictracker
 WORKDIR /musictracker
 
-ADD requirements.txt /handstracker
-ADD train.py /handstracker
-ADD classify.py /handstracker
-ADD classify_cam.py /handstracker
-COPY dataset /handstracker/dataset/
+ADD requirements.txt /musictracker
+ADD train.py /musictracker
+ADD classify.py /musictracker
+ADD classify_cam.py /musictracker
+COPY dataset /musictracker/dataset/
 
 RUN pip3 install -r requirements.txt
